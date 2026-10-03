@@ -73,7 +73,7 @@ if (settings.variableWaveDelay) {
 let variation = delay * 0.2;
 delay += (Math.random() * (variation * 2)) - variation;
 }
-spawnerTimeout = setTimeout(spawnSpiders, delay);
+spawnerTimeout = setTimeout(spawnSpider, delay);
 }
 
 function createSpider() {
@@ -138,7 +138,7 @@ spider.parentNode.removeChild(spider);
 function getRandomPointOnEdge(edge) {
 const width = window.innerWidth;
 const height = window.innerHeight;
-let x, y:
+let x, y;
 switch (edge) {
 case 'top':
 x = Math.random() * width;
@@ -164,7 +164,7 @@ function addSpiderWebs() {
 removeSpiderWebs();
 if (settings.enableLeftWeb) {
 leftWeb = document.createElement('img');
-leftWeb.src = api.runtime.getURL('assets/left_web.png');
+leftWeb.src = api.runtime.getURL('assets/left-web.png');
 leftWeb.style.position = 'fixed';
 leftWeb.style.left = '0px';
 leftWeb.style.top = '0px';
@@ -181,7 +181,7 @@ rightWeb.style.position = 'fixed';
 rightWeb.style.top = '0px';
 rightWeb.style.right = '0px';
 rightWeb.style.pointerEvents = 'none';
-rightWeb.style.zIndex = 9998;
+rightWeb.style.zIndex = '9998';
 rightWeb.style.width = settings.rightWebSize + 'px';
 rightWeb.style.height = 'auto';
 document.body.appendChild(rightWeb);
