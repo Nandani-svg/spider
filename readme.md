@@ -6,15 +6,12 @@
 
 ## About the game
 
-A Firefox extension that makes a spider walk across any web page.
+A Firefox extension that makes a spider walk across any web page and webs in side of your screen.
 
-## Installation
-1. Download the release
-2. Make zip of it(exclude readme)
-3. Open Firefox and go to `about:debugging#/runtime/this-firefox` then click om load temporary addon
-4. select that zip which u made and open any tab
-
-(it has been send to be publish on firefox)
+### Install (firefox)
+1. Install from [Firefox Add on](https://addons.mozilla.org/en-US/firefox/addon/spider-animator/)
+2. Click **Add to Firefox**
+3. Open the extension popup to set your decay threshold
 
 ## features
 
